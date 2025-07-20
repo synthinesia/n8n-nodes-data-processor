@@ -1,0 +1,27 @@
+{
+  "name": "HtmlDataExtractorNode",
+  "displayName": "HTML Extractor",
+  "icon": "file:html5.svg",
+  "group": ["transform"],
+  "version": 1,
+  "description": "Parses an HTML input into structured JSON",
+  "defaults": { "name": "HTML Extractor", "color": "#7733FF" },
+  "inputs": ["main"],
+  "outputs": ["main"],
+  "properties": [
+    {
+      "displayName": "HTML Input Field Name",
+      "name": "inputField",
+      "type": "string",
+      "default": "html",
+      "description": "Název vstupního pole s HTML."
+    },
+    {
+      "displayName": "Max Depth",
+      "name": "maxDepth",
+      "type": "number",
+      "default": 100,
+      "description": "Maximální hloubka extrahovaného stromu."
+    }
+  ]
+}
